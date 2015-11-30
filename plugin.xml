@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            objectClass="org.eclipse.jdt.core.IJavaElement"
+            id="mq.popmenu.mybatis.contribution1">
+         <menu
+               label="Mybatis 分类"
+               path="additions"
+               id="mq.popmenu.mybatis.menu1">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               label="Mybatis Generator"
+               class="mq.popmenu.mybatis.popup.actions.GeneratorAction"
+               menubarPath="mq.popmenu.mybatis.menu1/group1"
+               enablesFor="1"
+               id="mq.popmenu.mybatis.newAction">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>
